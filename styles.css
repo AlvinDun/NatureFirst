@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* GLOBAL STYLES
+-------------------------------
+*/
+body {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    color: #211d1c; /* Dark Brown */
+    margin: 0;
+    padding: 0;
+}
+
+
+h2 {
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
+
+/* HEADER
+-------------------------------
+*/
+
+
+header {
+	background: #2f261d url(images/background.jpg);
+    background-size: cover;
+	height: 600px;
+	color: #ffffff;
+    margin: 0 auto;
+}
+
+
+h1.hidden {
+    visibility: hidden;
+}
+
+header img {
+    position: relative;
+    top: 20px; left: 20px;
+    z-index: 10;
+}
+
+#wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#wrapper article {
+    background: #1ec693;
+}
+
+/* NAVIGATION
+-------------------------------
+*/
+nav {
+    background: rgba(0,0,0,0.65);
+    position: absolute;
+    top: 0px; left: 0px;
+    width: 100%; /* = 1200px */
+    padding-top: 90px;
+}
+
+nav a {
+	color: #ffffff; /* white */
+	text-decoration: none;
+	padding: 10px 20px 15px 20px;
+}
+
+nav a:visited {
+    color: #ffffff;
+	padding: 10px 20px 15px 20px;
+}
+
+nav a:hover {
+    background: #356d81; /* dark teal */
+}
+
+nav ul {
+    padding-left: 200px;
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+}
+
+nav span {
+    padding: 10px 20px 15px 20px;
+    background: #356d81;
+    color: #ffffff;
+}
+
+
+
+/* CONTENT 1
+-------------------------------
+*/
+#welcome {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+}
+
+#welcome p + a {
+    color: #ffffff;
+    font-weight: bold;
+    background: #13ff25;
+    text-decoration: none; 
+	font-size: 0.8em;
+    border-radius: 25px;
+    padding: 5px 15px;
+}
+
+
+
+/* CONTENT 2
+-------------------------------
+*/
+
+#details {
+    display: flex;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#details h2 {
+    text-align: center;
+}
+
+#details img {
+    padding-left: 25px;
+
+}
+
+#details a:last-of-type {
+    color: #ffffff;
+    font-weight: bold;
+    background: #13ff25;
+    text-decoration: none; 
+	font-size: 0.8em;
+    border-radius: 25px;
+    padding: 5px 15px;
+}
+
+
+
+/* SIDEBAR
+-------------------------------
+*/
+
+aside section {
+    padding: 20px;
+}
+
+aside {
+    background: #1ec693;
+    display: flex;
+    padding: 10px 10px;
+    margin-bottom: 0;
+}
+
+aside h2 {
+    font-size: 1.2em;
+}
+
+aside section a:last-of-type {
+    color: #ffffff;
+    font-weight: bold;
+    background: #13ff25;
+    text-decoration: none; 
+	font-size: 0.8em;
+    border-radius: 25px;
+    padding: 5px 15px;}
+
+
+/* SIDEBAR > BLOCKQUOTE
+-------------------------------
+*/
+blockquote {
+    background: #ffffff;
+    margin-bottom: 0;
+    align-self: flex-end;
+    padding: 30px 25px 25px 25px;
+    color: #000000;
+}
+
+blockquote p:first-of-type {
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+/* FOOTER
+-------------------------------
+*/
+footer {
+    font-size: 0.8em;
+    text-align: center;
+    margin: 0;
+}
+
+footer ul {
+    list-style-type: none; 
+    padding: 0; 
+    display: flex;
+    justify-content: center; /* To center all lists horizontallly */
+}
+
+footer li {
+    display: inline-block; 
+    margin-right: 120px; 
+}
+
+/* For about.html */
+#About {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #e9c69c;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#A-H1 {
+    text-align: center; /* To center align only the first h2 in center */
+}
+
+/* For learn.html */
+#learn {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#H1 {
+    text-align: center; /* To align only the first h2 in the center */
+}
+
+#learn article {
+    background-color: #f7f38b;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.flex-content {
+    display: flex
+}
+
+#Learn1 .flex-content, #Learn3 .flex-content {
+    flex-direction: row; /* Normal flex direction for content 1 and content 3 */
+}
+
+#Learn1 img {
+    padding-left: 20px;
+}
+
+#Learn2 .flex-content {
+    flex-direction: row-reverse; /* Reverse flex direction for better layout presentation */
+}
+
+#Learn2 p {
+    padding-left: 20px;
+}
+
+#Learn2 h2 {
+    text-align: center;
+}
+
+
+/* For action.html */
+#action {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#H1-Action {
+    text-align: center;
+}
+
+#action article {
+    background-color: #9cbce9;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#Action1 a:last-of-type {
+    display: inline-block;         
+    font-size: 1.2em;             
+    font-weight: bold;           
+    color: #ffffff;              
+    background-color: #007BFF;   
+    padding: 15px 30px;          
+    border-radius: 25px;          
+    text-decoration: none;         
+    margin-top: 20px;            
+}
+
+#Action1 a:last-of-type:hover {
+    background-color: #0056b3;   
+}
+
+#Action2 a:last-of-type {
+    display: inline-block;         
+    font-size: 1.2em;             
+    font-weight: bold;           
+    color: #ffffff;              
+    background-color: #007BFF;   
+    padding: 15px 30px;          
+    border-radius: 25px;          
+    text-decoration: none;         
+    margin-top: 20px;            
+}
+
+#Action2 a:last-of-type:hover {
+    background-color: #0056b3;    
+}
+
+#Action3 a:last-of-type {
+    display: inline-block;         
+    font-size: 1.2em;             
+    font-weight: bold;           
+    color: #ffffff;              
+    background-color: #007BFF;   
+    padding: 15px 30px;          
+    border-radius: 25px;          
+    text-decoration: none;         
+    margin-top: 20px;            
+}
+
+#Action3 a:last-of-type:hover {
+    background-color: #0056b3;    
+}
